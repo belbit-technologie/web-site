@@ -7,6 +7,7 @@ const Footer = () => {
         <footer className="bg-gray-900 text-white py-12">
             <div className="container mx-auto px-6 flex flex-col lg:flex-row items-center justify-between space-y-8 lg:space-y-0">
                 
+                {/* Logo and Description */}
                 <div className="flex flex-col items-center lg:items-start">
                     <Link to="/" className="text-2xl font-bold flex items-center space-x-2 mb-4">
                         <svg className="w-10 h-10 text-blue-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -14,8 +15,10 @@ const Footer = () => {
                         </svg>
                         <span>BelBit</span>
                     </Link>
-                    <p className="text-gray-400 text-center lg:text-left">Lorem ipsum dolor sit amet, <br/>
-                    consectetur adipiscing elit. Sed </p>
+                    <p className="text-gray-400 text-center lg:text-left">
+                        Lorem ipsum dolor sit amet, <br/>
+                        consectetur adipiscing elit. Sed 
+                    </p>
                 </div>
 
                 {/* Navigation Links */}
