@@ -4,18 +4,22 @@ import Testimonial from './components/Testimonials/Testimonials';
 import Hero from './components/Hero/Hero';  
 import './App.css';  
 import Navbar from './components/Navbar/Navbar';
-import Footer from './components/Footer/Footer';  
+import Footer from './components/Footer/Footer'; 
+import About from './components/About/About'; 
+import Contact from './components/Contact/Contact';
+import Numbers from './components/Numbers/Numbers';
 
 
 const HomePage = () => (
   <div>
     <Hero />
     <Testimonial />  
+    <Numbers />
     <div>Home Page Content</div>
   </div>
 );
 
-const AboutPage = () => <div>About Page Content</div>;
+
 const ContactPage = () => <div>Contact Page Content</div>;
 
 function App() {
@@ -27,8 +31,8 @@ function App() {
         <main className="flex-grow pt-16">
           <Routes>
             <Route path="/" element={<HomePage />} />
-            <Route path="/about" element={<AboutPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/contact" element={<Contact />} />
           </Routes>
         </main>
         
